@@ -1,0 +1,93 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block link %}
+    <link type="text/css" href="{% static 'main/css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="main-container">
+            <h1 class="main-title">Реестр сведений о проведении независимой оценки квалификации</h1>
+            <p class="main-subtitle">Проверьте свидетельство, найдите площадку для экзамена или любую другую информацию о независимой оценке квалификации</p>
+            <a href="/" class="main-btn">Пройти тестирование</a>
+        </div>
+    </main>
+    <section class="info">
+        <div class="info-cards-container">
+            <div class="info-card">
+                <img class="info-image" src="{% static 'main/images/infoImg.png' %}" alt="">
+                <h3 class="info-title">Мастер-Класс по коммуникации</h3>
+                <p class="info-text">Dolor sit amet consectetur, adipisicing elit. Quisquam, fugit.</p>
+            </div>
+            <div class="info-card">
+                <img class="info-image" src="{% static 'main/images/infoSecondImg.png' %}" alt="">
+                <h3 class="info-title">Мастер-Класс</h3>
+                <p class="info-text">Dolor sit amet consectetur, adipisicing elit. Quisquam, fugit.</p>
+            </div>
+        </div>
+    </section>
+    <section class="docs">
+        <div class="docs-container">
+            <div class="docs-card">
+                <p class="docs-tag">Постановление</p>
+                <p class="docs-title">Правительства Российской Федерации №</p>
+                <p class="docs-text">Правила проведения центром оценки квалификаций независимой оценки квалификации в форме профессионального экзамена</p>
+            </div>
+            <div class="docs-card">
+                <p class="docs-tag">Постановление</p>
+                <p class="docs-title">Правительства Российской Федерации №</p>
+                <p class="docs-text">Правила проведения центром оценки квалификаций независимой оценки квалификации в форме профессионального экзамена</p>
+            </div>
+            <div class="docs-card">
+                <p class="docs-tag">Постановление</p>
+                <p class="docs-title">Правительства Российской Федерации №</p>
+                <p class="docs-text">Правила проведения центром оценки квалификаций независимой оценки квалификации в форме профессионального экзамена</p>
+            </div>
+            <div class="docs-card">
+                <p class="docs-tag">Постановление</p>
+                <p class="docs-title">Правительства Российской Федерации №</p>
+                <p class="docs-text">Правила проведения центром оценки квалификаций независимой оценки квалификации в форме профессионального экзамена</p>
+            </div>
+            <div class="docs-card">
+                <p class="docs-tag">Постановление</p>
+                <p class="docs-title">Правительства Российской Федерации №</p>
+                <p class="docs-text">Правила проведения центром оценки квалификаций независимой оценки квалификации в форме профессионального экзамена</p>
+            </div>
+            <div class="docs-card">
+                <p class="docs-tag">Постановление</p>
+                <p class="docs-title">Правительства Российской Федерации №</p>
+                <p class="docs-text">Правила проведения центром оценки квалификаций независимой оценки квалификации в форме профессионального экзамена</p>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news-container">
+            <div class="news-card">
+                <img class="news-image" src="{% static 'main/images/newsImg.png' %}" alt="">
+                <div class="news-text-container">
+                    <p class="news-title">Lorem, ipsum dolor.</p>
+                    <p class="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis expedita. Dolores nostrum doloribus fugiat ipsum vero sit dolor enim. A non mollitia modi dolore perferendis unde accusantium laborum vero.</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img class="news-image" src="{% static 'main/images/newsSecondImg.png' %}" alt="">
+                <div class="news-text-container">
+                    <p class="news-title">Lorem, ipsum dolor.</p>
+                    <p class="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis expedita. Dolores nostrum doloribus fugiat ipsum vero sit dolor enim. A non mollitia modi dolore perferendis unde accusantium laborum vero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="quiz-container">
+            <h2 class="quiz-title">Получить печать</h2>
+            <form class="quiz-form" action="">
+                <input type="text" name="code" id="code" placeholder="Вставить код сюда">
+                <button class="quiz-submit" type="submit">Проверить код</button>
+            </form>
+        </div>
+        <p class="quiz-text">Пройди демо-тест по интересующей квалификации и узнай уровень своих навыков. После прохождения получи код, который можно сдать и получить печать.</p>
+    </section>
+{% endblock %}

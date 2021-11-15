@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    /* margin-bottom: 150px; */
+}
+
+:root {
+    --blue: #033B9E;
+    --dark-blue: #022A73;
+    --light-blue: #577EC3;
+    --sky-blue: #D8E4F9;
+    --gray: #F7F6F6;
+    --black: #212121;
+    --white: #fff;
+    --red: #E53935;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: var(--white);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.logo-text {
+    font-size: 18px;
+}
+
+.logo-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 18px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    font-size: 18px;
+    color: var(--black);
+    text-decoration: none;
+    transition: opacity, transform .2s;
+}
+
+.link:hover {
+    opacity: .8;
+    transform: scale(1.05);
+}
+
+.link:not(:last-child) {
+    margin-right: 25px;
+}
+
+footer {
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blue);
+    padding: 20px 50px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity .2s;
+}
+
+.footer-link:last-child {
+    width: 250px;
+}
+
+.footer-link:hover {
+    opacity: .8;
+}
+
+.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.bottom-footer {
+    background: var(--dark-blue);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-footer span {
+    color: #fff;
+}
+
+.bottom-footer span:first-child {
+    opacity: .5;
+    margin-right: 10px;
+}

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="{% static 'main/images/logo.svg' %}" type="image/x-icon">
+    <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet">
+    {% block link %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a href="/" class="header-logo">
+            <img class="logo-img" src="{% static 'main/images/logo.svg' %}" alt="Лого">
+            <span class="logo-text">Реестер НОК</span>
+            <div class="header-links">
+                <a href="/master-class" class="link">Мастер-классы</a>
+                <a href="/docs" class="link">Документы</a>
+                <a href="/news" class="link">Новости</a>
+                <a href="/" class="link">Тестирование</a>
+            </div>
+        </a>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div class="upper-footer">
+            <div class="footer-logo">
+                <img class="logo-img" src="{% static 'main/images/logo.svg' %}" alt="Лого">
+                <span class="logo-text">Реестер НОК</span>
+            </div>
+            <a class="footer-link disabled">Служба поддержки</a>
+            <a class="footer-link" href="tel:+74959661686">+7 (495) 966-16-86</a>
+            <a class="footer-link" href="mailto:nok-nark@nark.ru">nok-nark@nark.ru</a>
+            <a class="footer-link" href="#">Политика конфиденциальности Согласие на обработку ПД</a>
+        </div>
+        <div class="bottom-footer">
+            <span>© 2016 — 2021, АНО «Национальное агентство развития квалификаций»</span>
+            <span>© 2016 — 2021, Министерство труда и социальной защиты Российской Федерации</span>
+        </div>
+    </footer>
+</body>
+</html>
