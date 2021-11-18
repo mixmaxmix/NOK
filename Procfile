@@ -1,0 +1,1 @@
+web: cd nok; gunicorn nok.wsgi;
