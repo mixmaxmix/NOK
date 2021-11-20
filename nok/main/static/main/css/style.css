@@ -133,3 +133,45 @@ footer {
     opacity: .5;
     margin-right: 10px;
 }
+
+@media (max-width: 1024px) {
+    .bottom-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-footer span:first-child {
+        opacity: .5;
+        margin-bottom: 10px;
+    }
+    .bottom-footer span {
+        font-size: 15px;
+    }
+    .footer-link:last-child {
+        display: none;
+    }
+    .footer-link {
+        font-size: 10px;
+    }
+    .link {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .link:not(:last-child) {
+        margin-right: 5px;
+    }
+    .logo-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .link {
+        display: none;
+    }
+    .link:last-child {
+        display: block;
+    }
+    .upper-footer {
+        display: none;
+    }
+}
